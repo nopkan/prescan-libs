@@ -41,7 +41,7 @@ def main():
     classpath = ROOT / 'sources/classpath/deps-complete'
     if not classpath.exists():
         classpath = ROOT / 'sources/classpath/deps'
-    run = ROOT / 'reports' / ('sonarqube-' + datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ'))
+    run = ROOT / 'reports/raw/sonarqube' / datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
     run.mkdir(parents=True)
     save(run / 'inputs.json', inputs)
     save(run / 'server-status.json', api('/api/system/status'))

@@ -2,7 +2,6 @@
 """Fetch only the five requested binaries; verify Central SHA-1 and record SHA-256."""
 import hashlib
 import json
-from datetime import datetime, timezone
 from pathlib import Path
 from urllib.request import urlopen
 from zipfile import ZipFile
@@ -50,7 +49,6 @@ def main():
             "file": f"libs/{name}.jar", "coordinates": f"{group}:{artifact}:{version}",
             "url": base + ".jar", "bytes": len(content),
             "central_sha1": expected, "sha256": hashlib.sha256(content).hexdigest(),
-            "verified_at_utc": datetime.now(timezone.utc).isoformat(),
         })
         print(f"Verified {target.name} ({len(content):,} bytes)")
     (ROOT / "metadata" / "libraries.json").write_text(json.dumps(records, indent=2) + "\n")

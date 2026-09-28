@@ -96,6 +96,11 @@ def main():
     text += '</dependencies></project>\n'
     (resolver / 'pom.xml').write_text(text)
     (ROOT / 'metadata/source-scans/inputs.json').write_text(json.dumps(records, indent=2)+'\n')
+    public_manifest = [{key: record[key] for key in (
+        'coordinates', 'source_url', 'source_sha1', 'source_sha256',
+        'selected_java_files')}
+        for record in records]
+    (ROOT / 'sources/MANIFEST.json').write_text(json.dumps(public_manifest, indent=2) + '\n')
     subprocess.run(['mvn', '-B', '-f', str(resolver / 'pom.xml'),
                     'org.apache.maven.plugins:maven-dependency-plugin:3.8.1:copy-dependencies',
                     '-DoutputDirectory=deps-complete'], check=True)

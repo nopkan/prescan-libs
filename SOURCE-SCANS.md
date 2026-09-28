@@ -36,7 +36,7 @@ Wait until `http://127.0.0.1:9000/api/system/status` returns `UP`, then open [So
 
 Each teammate configures a separate local administrator password. The local login is in `private/sonarqube-local.json` (permissions `600`). Project-scoped scanner tokens are stored separately under `private/`; do not commit or include them with submitted reports.
 
-Each dated directory under `reports/sonarqube-*` contains:
+Each dated directory under `reports/raw/sonarqube/` contains:
 
 - Input manifest and server version.
 - Scanner configurations and full logs.
@@ -45,7 +45,7 @@ Each dated directory under `reports/sonarqube-*` contains:
 - Exported bug, vulnerability, code-smell, and hotspot records.
 - A machine-readable `summary.json` and a readable results summary when generated.
 
-`reports/SONARQUBE-SUMMARY.md` consolidates the latest completed run per library. Earlier diagnostic runs remain available for traceability; use the consolidated summary to select the final evidence.
+[`reports/sonarqube/SONARQUBE-SUMMARY.md`](reports/sonarqube/SONARQUBE-SUMMARY.md) consolidates the latest completed run per library, with stable per-library evidence folders. Earlier diagnostic runs remain locally under ignored `reports/raw/sonarqube/` for traceability.
 
 ## Interpretation
 

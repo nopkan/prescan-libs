@@ -1,0 +1,411 @@
+{
+  "total": 9,
+  "exported": 9,
+  "issues": [
+    {
+      "key": "0a226153-9996-4bc5-8cac-efd87731fc25",
+      "rule": "java:S5164",
+      "severity": "MAJOR",
+      "component": "lib-prescan-curvesapi-1.07:scan-src/com/graphbuilder/curve/BSpline.java",
+      "project": "lib-prescan-curvesapi-1.07",
+      "line": 82,
+      "hash": "1e91d719f311f3a6c12eade96c7a9075",
+      "textRange": {
+        "startLine": 82,
+        "endLine": 82,
+        "startOffset": 46,
+        "endOffset": 57
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Call \"remove()\" on \"SHARED_DATA\".",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "leak",
+        "performance"
+      ],
+      "creationDate": "2026-09-28T12:02:34+0700",
+      "updateDate": "2026-09-28T12:02:34+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "fec1ccd8-5e32-4dbe-8d97-e4086938d03e",
+      "rule": "java:S5164",
+      "severity": "MAJOR",
+      "component": "lib-prescan-curvesapi-1.07:scan-src/com/graphbuilder/curve/BezierCurve.java",
+      "project": "lib-prescan-curvesapi-1.07",
+      "line": 55,
+      "hash": "1e91d719f311f3a6c12eade96c7a9075",
+      "textRange": {
+        "startLine": 55,
+        "endLine": 55,
+        "startOffset": 46,
+        "endOffset": 57
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Call \"remove()\" on \"SHARED_DATA\".",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "leak",
+        "performance"
+      ],
+      "creationDate": "2026-09-28T12:02:34+0700",
+      "updateDate": "2026-09-28T12:02:34+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "29edd9ed-ddfb-4fba-980a-fce39ed4680b",
+      "rule": "java:S5164",
+      "severity": "MAJOR",
+      "component": "lib-prescan-curvesapi-1.07:scan-src/com/graphbuilder/curve/CardinalSpline.java",
+      "project": "lib-prescan-curvesapi-1.07",
+      "line": 50,
+      "hash": "1e91d719f311f3a6c12eade96c7a9075",
+      "textRange": {
+        "startLine": 50,
+        "endLine": 50,
+        "startOffset": 46,
+        "endOffset": 57
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Call \"remove()\" on \"SHARED_DATA\".",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "leak",
+        "performance"
+      ],
+      "creationDate": "2026-09-28T12:02:34+0700",
+      "updateDate": "2026-09-28T12:02:34+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "82dd8b15-96cb-4925-aa00-d7d91fdd0706",
+      "rule": "java:S5164",
+      "severity": "MAJOR",
+      "component": "lib-prescan-curvesapi-1.07:scan-src/com/graphbuilder/curve/CatmullRomSpline.java",
+      "project": "lib-prescan-curvesapi-1.07",
+      "line": 43,
+      "hash": "1e91d719f311f3a6c12eade96c7a9075",
+      "textRange": {
+        "startLine": 43,
+        "endLine": 43,
+        "startOffset": 46,
+        "endOffset": 57
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Call \"remove()\" on \"SHARED_DATA\".",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "leak",
+        "performance"
+      ],
+      "creationDate": "2026-09-28T12:02:34+0700",
+      "updateDate": "2026-09-28T12:02:34+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "6ba0f976-ed75-454c-8d4f-465045a607c2",
+      "rule": "java:S5164",
+      "severity": "MAJOR",
+      "component": "lib-prescan-curvesapi-1.07:scan-src/com/graphbuilder/curve/CubicBSpline.java",
+      "project": "lib-prescan-curvesapi-1.07",
+      "line": 78,
+      "hash": "1e91d719f311f3a6c12eade96c7a9075",
+      "textRange": {
+        "startLine": 78,
+        "endLine": 78,
+        "startOffset": 46,
+        "endOffset": 57
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Call \"remove()\" on \"SHARED_DATA\".",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "leak",
+        "performance"
+      ],
+      "creationDate": "2026-09-28T12:02:34+0700",
+      "updateDate": "2026-09-28T12:02:34+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "93fdc46d-6c2e-4e73-a607-51e7c2961617",
+      "rule": "java:S5164",
+      "severity": "MAJOR",
+      "component": "lib-prescan-curvesapi-1.07:scan-src/com/graphbuilder/curve/LagrangeCurve.java",
+      "project": "lib-prescan-curvesapi-1.07",
+      "line": 71,
+      "hash": "1e91d719f311f3a6c12eade96c7a9075",
+      "textRange": {
+        "startLine": 71,
+        "endLine": 71,
+        "startOffset": 46,
+        "endOffset": 57
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Call \"remove()\" on \"SHARED_DATA\".",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "leak",
+        "performance"
+      ],
+      "creationDate": "2026-09-28T12:02:34+0700",
+      "updateDate": "2026-09-28T12:02:34+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "593f0bc3-bca7-4fcc-b0d3-7b891cde5ac7",
+      "rule": "java:S5164",
+      "severity": "MAJOR",
+      "component": "lib-prescan-curvesapi-1.07:scan-src/com/graphbuilder/curve/NURBSpline.java",
+      "project": "lib-prescan-curvesapi-1.07",
+      "line": 53,
+      "hash": "1e91d719f311f3a6c12eade96c7a9075",
+      "textRange": {
+        "startLine": 53,
+        "endLine": 53,
+        "startOffset": 46,
+        "endOffset": 57
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Call \"remove()\" on \"SHARED_DATA\".",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "leak",
+        "performance"
+      ],
+      "creationDate": "2026-09-28T12:02:34+0700",
+      "updateDate": "2026-09-28T12:02:34+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "79f4bd3e-e012-459d-8d18-6f366a267c0d",
+      "rule": "java:S5164",
+      "severity": "MAJOR",
+      "component": "lib-prescan-curvesapi-1.07:scan-src/com/graphbuilder/curve/NaturalCubicSpline.java",
+      "project": "lib-prescan-curvesapi-1.07",
+      "line": 64,
+      "hash": "1e91d719f311f3a6c12eade96c7a9075",
+      "textRange": {
+        "startLine": 64,
+        "endLine": 64,
+        "startOffset": 46,
+        "endOffset": 57
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Call \"remove()\" on \"SHARED_DATA\".",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "leak",
+        "performance"
+      ],
+      "creationDate": "2026-09-28T12:02:34+0700",
+      "updateDate": "2026-09-28T12:02:34+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "fdd72a2b-c590-4333-b5da-d540cabd3d42",
+      "rule": "java:S5164",
+      "severity": "MAJOR",
+      "component": "lib-prescan-curvesapi-1.07:scan-src/com/graphbuilder/math/PascalsTriangle.java",
+      "project": "lib-prescan-curvesapi-1.07",
+      "line": 40,
+      "hash": "1e91d719f311f3a6c12eade96c7a9075",
+      "textRange": {
+        "startLine": 40,
+        "endLine": 40,
+        "startOffset": 46,
+        "endOffset": 57
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Call \"remove()\" on \"SHARED_DATA\".",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "leak",
+        "performance"
+      ],
+      "creationDate": "2026-09-28T12:02:34+0700",
+      "updateDate": "2026-09-28T12:02:34+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    }
+  ]
+}

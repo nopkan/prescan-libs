@@ -1,0 +1,47 @@
+[
+  {
+    "file": "libs/poi-5.2.3.jar",
+    "coordinates": "org.apache.poi:poi:5.2.3",
+    "url": "https://repo.maven.apache.org/maven2/org/apache/poi/poi/5.2.3/poi-5.2.3.jar",
+    "bytes": 2964641,
+    "central_sha1": "2fb22ae74ad5aea6af1a9c64b9542f2ccf348604",
+    "sha256": "1d4c81a283e127693db89e85df45119d9d312d5686d2439b5be9445c2c649155",
+    "verified_at_utc": "2026-09-28T04:49:01.587147+00:00"
+  },
+  {
+    "file": "libs/poi-ooxml-5.2.3.jar",
+    "coordinates": "org.apache.poi:poi-ooxml:5.2.3",
+    "url": "https://repo.maven.apache.org/maven2/org/apache/poi/poi-ooxml/5.2.3/poi-ooxml-5.2.3.jar",
+    "bytes": 2010497,
+    "central_sha1": "02efd11c940adb18c03eb9ce7ad88fc40ee6a196",
+    "sha256": "9b8ff6ecf562836299ce15997796e3d47fe063a5956c1c7d3f6e2a4bf6e60b79",
+    "verified_at_utc": "2026-09-28T04:49:02.768386+00:00"
+  },
+  {
+    "file": "libs/poi-ooxml-lite-5.2.3.jar",
+    "coordinates": "org.apache.poi:poi-ooxml-lite:5.2.3",
+    "url": "https://repo.maven.apache.org/maven2/org/apache/poi/poi-ooxml-lite/5.2.3/poi-ooxml-lite-5.2.3.jar",
+    "bytes": 5898622,
+    "central_sha1": "db113c8e9051b0ff967f4911fa20336c8325a7c5",
+    "sha256": "35a200a9bd110b176450179170887bb9eac2dcba47a09d93c91e83afe70b7147",
+    "verified_at_utc": "2026-09-28T04:49:05.794160+00:00"
+  },
+  {
+    "file": "libs/xmlbeans-5.1.1.jar",
+    "coordinates": "org.apache.xmlbeans:xmlbeans:5.1.1",
+    "url": "https://repo.maven.apache.org/maven2/org/apache/xmlbeans/xmlbeans/5.1.1/xmlbeans-5.1.1.jar",
+    "bytes": 2196526,
+    "central_sha1": "48a369df0eccb509d46203104e4df9cb00f0f68b",
+    "sha256": "5f484a78bed71cbffe3709678b6bdd3463781a7c61c6d9872330aecbf150762a",
+    "verified_at_utc": "2026-09-28T04:49:06.907536+00:00"
+  },
+  {
+    "file": "libs/curvesapi-1.07.jar",
+    "coordinates": "com.github.virtuald:curvesapi:1.07",
+    "url": "https://repo.maven.apache.org/maven2/com/github/virtuald/curvesapi/1.07/curvesapi-1.07.jar",
+    "bytes": 111978,
+    "central_sha1": "863654849995f9d4f0ed2ed1a3870da3a108473c",
+    "sha256": "b31539cdcf189d9e68a1f6998cba09ea912f99f5f24bcd0650212b1af9d355a2",
+    "verified_at_utc": "2026-09-28T04:49:08.753197+00:00"
+  }
+]

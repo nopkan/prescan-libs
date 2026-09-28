@@ -1,0 +1,381 @@
+{
+  "total": 8,
+  "exported": 8,
+  "issues": [
+    {
+      "key": "b1bf016a-6e9d-4093-b2d1-3fe3958e5445",
+      "rule": "java:S5164",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-5.2.3:scan-src/org/apache/poi/extractor/ExtractorFactory.java",
+      "project": "lib-prescan-poi-5.2.3",
+      "line": 66,
+      "hash": "fc49d5933adb696c2d88cd7ef3fdd863",
+      "textRange": {
+        "startLine": 66,
+        "endLine": 66,
+        "startOffset": 46,
+        "endOffset": 73
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Call \"remove()\" on \"threadPreferEventExtractors\".",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "leak",
+        "performance"
+      ],
+      "creationDate": "2026-09-28T12:02:48+0700",
+      "updateDate": "2026-09-28T12:02:48+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "2178c39f-1080-4eac-b859-3771a877a417",
+      "rule": "java:S5164",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-5.2.3:scan-src/org/apache/poi/hssf/usermodel/HSSFCellStyle.java",
+      "project": "lib-prescan-poi-5.2.3",
+      "line": 123,
+      "hash": "c386d514a0a7c8542ff2a7f037469c81",
+      "textRange": {
+        "startLine": 123,
+        "endLine": 123,
+        "startOffset": 44,
+        "endOffset": 58
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Call \"remove()\" on \"lastDateFormat\".",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "leak",
+        "performance"
+      ],
+      "creationDate": "2026-09-28T12:02:48+0700",
+      "updateDate": "2026-09-28T12:02:48+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "ced2c438-6a71-4ec1-bef1-3bd94831d7c9",
+      "rule": "java:S9362",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-5.2.3:scan-src/org/apache/poi/hssf/usermodel/HSSFRow.java",
+      "project": "lib-prescan-poi-5.2.3",
+      "line": 724,
+      "hash": "12be4057c05bbb9f3f736a983f8f0915",
+      "textRange": {
+        "startLine": 724,
+        "endLine": 724,
+        "startOffset": 15,
+        "endOffset": 23
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "lib-prescan-poi-5.2.3:scan-src/org/apache/poi/hssf/usermodel/HSSFRow.java",
+              "textRange": {
+                "startLine": 725,
+                "endLine": 725,
+                "startOffset": 15,
+                "endOffset": 18
+              },
+              "msg": "Not compared in equals()",
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "This hashCode() implementation is inconsistent with equals(): it reads \"row\", which equals() never reads, so equal objects may hash differently.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "suspicious"
+      ],
+      "creationDate": "2026-09-28T12:02:48+0700",
+      "updateDate": "2026-09-28T12:02:48+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "93a0047c-802a-4631-a446-4855c487de42",
+      "rule": "java:S2885",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-5.2.3:scan-src/org/apache/poi/ss/format/CellDateFormatter.java",
+      "project": "lib-prescan-poi-5.2.3",
+      "line": 42,
+      "hash": "11f470eaeab76d9e7bde268a29c240e3",
+      "textRange": {
+        "startLine": 42,
+        "endLine": 42,
+        "startOffset": 34,
+        "endOffset": 49
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make \"EXCEL_EPOCH_CAL\" an instance variable.",
+      "effort": "15min",
+      "debt": "15min",
+      "author": "",
+      "tags": [
+        "multi-threading"
+      ],
+      "creationDate": "2026-09-28T12:02:48+0700",
+      "updateDate": "2026-09-28T12:02:48+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "49733670-25c8-4459-8eca-089244971b9b",
+      "rule": "java:S5998",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-5.2.3:scan-src/org/apache/poi/ss/format/CellFormatPart.java",
+      "project": "lib-prescan-poi-5.2.3",
+      "line": 123,
+      "hash": "25808027dd052d90cc18565d3bdbeab8",
+      "textRange": {
+        "startLine": 123,
+        "endLine": 123,
+        "startOffset": 20,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Refactor this repetition that can lead to a stack overflow for large inputs.",
+      "effort": "20min",
+      "debt": "20min",
+      "author": "",
+      "tags": [
+        "regex"
+      ],
+      "creationDate": "2026-09-28T12:02:48+0700",
+      "updateDate": "2026-09-28T12:02:48+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "866e03cd-68c1-4405-9597-dfa83b74c251",
+      "rule": "java:S9354",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-5.2.3:scan-src/org/apache/poi/ss/formula/eval/forked/ForkedEvaluationSheet.java",
+      "project": "lib-prescan-poi-5.2.3",
+      "line": 163,
+      "hash": "730710328e41d26a800c84de5a6cbbb7",
+      "textRange": {
+        "startLine": 163,
+        "endLine": 163,
+        "startOffset": 32,
+        "endOffset": 33
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Subtracting numeric values in compareTo can overflow; use Integer.compare instead.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "pitfall"
+      ],
+      "creationDate": "2026-09-28T12:02:48+0700",
+      "updateDate": "2026-09-28T12:02:48+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "c3e5eda1-750d-4e59-ad5c-60e3851c5a6b",
+      "rule": "java:S5164",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-5.2.3:scan-src/org/apache/poi/ss/usermodel/DateUtil.java",
+      "project": "lib-prescan-poi-5.2.3",
+      "line": 548,
+      "hash": "1aff4637297f44da5d9e5dbd0a5c19d8",
+      "textRange": {
+        "startLine": 548,
+        "endLine": 548,
+        "startOffset": 46,
+        "endOffset": 62
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Call \"remove()\" on \"lastCachedResult\".",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "leak",
+        "performance"
+      ],
+      "creationDate": "2026-09-28T12:02:48+0700",
+      "updateDate": "2026-09-28T12:02:48+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "faaa37a6-5fb4-45cf-b807-7de4643a3195",
+      "rule": "java:S9130",
+      "severity": "CRITICAL",
+      "component": "lib-prescan-poi-5.2.3:scan-src/org/apache/poi/util/LittleEndianByteArrayInputStream.java",
+      "project": "lib-prescan-poi-5.2.3",
+      "line": 99,
+      "hash": "af61bfd86a463cf0ecef296fb5194e53",
+      "textRange": {
+        "startLine": 99,
+        "endLine": 99,
+        "startOffset": 15,
+        "endOffset": 27
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Store the return value of \"read()\" in an \"int\" variable and check for -1 before casting.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "pitfall"
+      ],
+      "creationDate": "2026-09-28T12:02:48+0700",
+      "updateDate": "2026-09-28T12:02:48+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    }
+  ]
+}

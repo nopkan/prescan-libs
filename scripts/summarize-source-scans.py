@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Consolidate the latest completed source analysis for each requested artifact."""
 import json
+import shutil
 from pathlib import Path
 from datetime import datetime, timezone
 
@@ -9,7 +10,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 def main():
     latest = {}
-    for run in sorted((ROOT / 'reports').glob('sonarqube-*')):
+    for run in sorted((ROOT / 'reports/raw/sonarqube').glob('*')):
         summary = run / 'summary.json'
         if not summary.exists():
             continue
@@ -19,6 +20,22 @@ def main():
     order = ['poi','poi-ooxml','poi-ooxml-lite','xmlbeans','curvesapi']
     if set(latest) != set(order):
         raise RuntimeError('Not all five artifacts have completed reports.')
+    published = ROOT / 'reports/sonarqube'
+    published.mkdir(parents=True, exist_ok=True)
+    evidence_files = [
+        'measures.json', 'quality-gate.json', 'quality-profiles.json',
+        'issues-bug.json', 'issues-vulnerability.json',
+        'issues-code_smell.json', 'hotspots.json'
+    ]
+    for artifact in order:
+        record, folder = latest[artifact]
+        version = record['coordinates'].split(':')[-1]
+        destination = published / f'{artifact}-{version}'
+        if destination.exists():
+            shutil.rmtree(destination)
+        destination.mkdir()
+        for name in evidence_files:
+            shutil.copyfile(folder / name, destination / name)
     lines = ['# SonarQube library source pre-scan results', '',
              f'Consolidated: {datetime.now(timezone.utc).isoformat()}', '',
              'All five analyses completed and were processed by the local SonarQube server. Server version and quality-profile metadata are retained in each run. Results below are automated findings requiring review, not bank approval or confirmed exploitable vulnerabilities.', '',
@@ -27,7 +44,8 @@ def main():
     for artifact in order:
         record, folder = latest[artifact]
         m=record['measures']
-        lines.append(f'| [{artifact}]({record["url"]}) | {record["coordinates"].split(":")[-1]} | {m["files"]} | {m["bugs"]} | {m["vulnerabilities"]} | {m["code_smells"]} |')
+        version = record['coordinates'].split(':')[-1]
+        lines.append(f'| [{artifact}]({artifact}-{version}/) | {version} | {m["files"]} | {m["bugs"]} | {m["vulnerabilities"]} | {m["code_smells"]} |')
     lines += ['', '## Security findings to review', '',
               'These are SonarQube rule findings, not CVE identifiers. Review context, reachability, and bank policy before deciding disposition. No findings have been suppressed or manually marked safe.', '']
     for artifact in order:
@@ -38,7 +56,8 @@ def main():
         lines += [f'### {artifact}', '']
         for issue in issues['issues']:
             relative=issue['component'].split(':',1)[1]
-            source=ROOT/'sources'/f'{artifact}-{record["coordinates"].split(":")[-1]}'/relative
+            version = record['coordinates'].split(':')[-1]
+            source = Path('../../sources') / f'{artifact}-{version}' / relative
             line=issue.get('line',1)
             lines.append(f'- **{issue["severity"]}**, `{issue["rule"]}`: {issue["message"]} [{source.name}:{line}]({source}:{line})')
         lines.append('')
@@ -49,12 +68,13 @@ def main():
               '- Debug logs show symbolic-execution step limits for some XMLBeans methods. Completed analysis does not mean every execution path was explored.',
               '- Inspect the saved quality-gate conditions: the default gate can pass despite existing findings. An OK gate does not constitute bank security approval.',
               '- CVE/dependency scans are separate Dependency-Check runs. Zero SonarQube vulnerability findings do not establish that a library has no known vulnerabilities.',
-              f'- Detailed method, login location, and rerun instructions: [SOURCE-SCANS.md]({ROOT}/SOURCE-SCANS.md).', '',
+              '- Detailed method and rerun instructions: [SOURCE-SCANS.md](../../SOURCE-SCANS.md).', '',
               '## Evidence and scanner warnings', '']
     for artifact in order:
         record, folder=latest[artifact]
         warnings=[l.split('WARN',1)[1].strip() for l in (folder/'scanner.log').read_text().splitlines() if ' WARN ' in l]
-        lines += [f'### {artifact}', '', f'[Evidence directory]({folder}) — analysis ID `{record["analysis_id"]}`.', '']
+        version = record['coordinates'].split(':')[-1]
+        lines += [f'### {artifact}', '', f'[Evidence directory]({artifact}-{version}/) — analysis ID `{record["analysis_id"]}`.', '']
         for kind in ['bug','vulnerability','code_smell']:
             data=json.loads((folder/f'issues-{kind}.json').read_text())
             if data['exported']!=data['total']:
@@ -62,9 +82,9 @@ def main():
         lines.append('All issue records exported; no pagination truncation.')
         if warnings:
             lines.append('')
-            lines.extend('- '+w for w in dict.fromkeys(warnings))
+            lines.extend('- '+w.replace(str(ROOT), '<workspace>') for w in dict.fromkeys(warnings))
         lines.append('')
-    output=ROOT/'reports/SONARQUBE-SUMMARY.md'
+    output=published/'SONARQUBE-SUMMARY.md'
     output.write_text('\n'.join(lines)+'\n')
     (ROOT/'metadata/source-scans/latest-reports.json').write_text(json.dumps(
         {a:{'summary':r,'evidence':str(p)} for a,(r,p) in latest.items()},indent=2)+'\n')

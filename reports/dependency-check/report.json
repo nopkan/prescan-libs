@@ -1,0 +1,745 @@
+{
+  "reportSchema" : "1.1",
+  "scanInfo" : {
+    "engineVersion" : "13.0.0",
+    "dataSource" : [ {
+      "name" : "NVD API Last Checked",
+      "timestamp" : "2026-09-28T05:29:40Z"
+    }, {
+      "name" : "NVD API Last Modified",
+      "timestamp" : "2026-09-28T01:00:04-04"
+    }, {
+      "name" : "NVD Cache Last Checked",
+      "timestamp" : "2026-09-28T05:29:40Z"
+    }, {
+      "name" : "NVD Cache Last Modified",
+      "timestamp" : "2026-09-28T01:00:04-04"
+    } ]
+  },
+  "projectInfo" : {
+    "name" : "POI library pre-scan — five requested JARs",
+    "reportDate" : "2026-09-28T05:38:06.213903Z",
+    "credits" : {
+      "NVD" : "This product uses the NVD API but is not endorsed or certified by the NVD. This report contains data retrieved from the National Vulnerability Database: https://nvd.nist.gov",
+      "CISA" : "This report may contain data retrieved from the CISA Known Exploited Vulnerability Catalog: https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "NPM" : "This report may contain data retrieved from the Github Advisory Database (via NPM Audit API): https://github.com/advisories/",
+      "RETIREJS" : "This report may contain data retrieved from the RetireJS community: https://retirejs.github.io/retire.js/",
+      "OSSINDEX" : "This report may contain data retrieved from the Sonatype Guide OSS Index API: https://www.sonatype.com/products/sonatype-guide/oss-index-users"
+    }
+  },
+  "dependencies" : [ {
+    "isVirtual" : false,
+    "fileName" : "curvesapi-1.07.jar",
+    "filePath" : "libs/curvesapi-1.07.jar",
+    "md5" : "79e44d3a323887fba21a34202b8eb1f9",
+    "sha1" : "863654849995f9d4f0ed2ed1a3870da3a108473c",
+    "sha256" : "b31539cdcf189d9e68a1f6998cba09ea912f99f5f24bcd0650212b1af9d355a2",
+    "description" : "Implementation of various mathematical curves that define themselves over a set of control points. The API is written in Java. The curves supported are: Bezier, B-Spline, Cardinal Spline, Catmull-Rom Spline, Lagrange, Natural Cubic Spline, and NURBS.",
+    "license" : "BSD License: http://opensource.org/licenses/BSD-3-Clause",
+    "evidenceCollected" : {
+      "vendorEvidence" : [ {
+        "type" : "vendor",
+        "confidence" : "HIGH",
+        "source" : "file",
+        "name" : "name",
+        "value" : "curvesapi"
+      }, {
+        "type" : "vendor",
+        "confidence" : "MEDIUM",
+        "source" : "Manifest",
+        "name" : "automatic-module-name",
+        "value" : "com.github.virtuald.curvesapi"
+      }, {
+        "type" : "vendor",
+        "confidence" : "LOW",
+        "source" : "pom",
+        "name" : "artifactid",
+        "value" : "curvesapi"
+      }, {
+        "type" : "vendor",
+        "confidence" : "MEDIUM",
+        "source" : "pom",
+        "name" : "developer id",
+        "value" : "stormdollar"
+      }, {
+        "type" : "vendor",
+        "confidence" : "MEDIUM",
+        "source" : "pom",
+        "name" : "developer id",
+        "value" : "virtuald"
+      }, {
+        "type" : "vendor",
+        "confidence" : "MEDIUM",
+        "source" : "pom",
+        "name" : "developer name",
+        "value" : "Dustin Spicuzza"
+      }, {
+        "type" : "vendor",
+        "confidence" : "MEDIUM",
+        "source" : "pom",
+        "name" : "developer name",
+        "value" : "stormdollar"
+      }, {
+        "type" : "vendor",
+        "confidence" : "HIGHEST",
+        "source" : "pom",
+        "name" : "groupid",
+        "value" : "com.github.virtuald"
+      }, {
+        "type" : "vendor",
+        "confidence" : "HIGH",
+        "source" : "pom",
+        "name" : "name",
+        "value" : "curvesapi"
+      }, {
+        "type" : "vendor",
+        "confidence" : "HIGHEST",
+        "source" : "pom",
+        "name" : "url",
+        "value" : "virtuald/curvesapi"
+      } ],
+      "productEvidence" : [ {
+        "type" : "product",
+        "confidence" : "HIGH",
+        "source" : "file",
+        "name" : "name",
+        "value" : "curvesapi"
+      }, {
+        "type" : "product",
+        "confidence" : "MEDIUM",
+        "source" : "Manifest",
+        "name" : "automatic-module-name",
+        "value" : "com.github.virtuald.curvesapi"
+      }, {
+        "type" : "product",
+        "confidence" : "HIGHEST",
+        "source" : "pom",
+        "name" : "artifactid",
+        "value" : "curvesapi"
+      }, {
+        "type" : "product",
+        "confidence" : "LOW",
+        "source" : "pom",
+        "name" : "developer id",
+        "value" : "stormdollar"
+      }, {
+        "type" : "product",
+        "confidence" : "LOW",
+        "source" : "pom",
+        "name" : "developer id",
+        "value" : "virtuald"
+      }, {
+        "type" : "product",
+        "confidence" : "LOW",
+        "source" : "pom",
+        "name" : "developer name",
+        "value" : "Dustin Spicuzza"
+      }, {
+        "type" : "product",
+        "confidence" : "LOW",
+        "source" : "pom",
+        "name" : "developer name",
+        "value" : "stormdollar"
+      }, {
+        "type" : "product",
+        "confidence" : "HIGHEST",
+        "source" : "pom",
+        "name" : "groupid",
+        "value" : "com.github.virtuald"
+      }, {
+        "type" : "product",
+        "confidence" : "HIGH",
+        "source" : "pom",
+        "name" : "name",
+        "value" : "curvesapi"
+      }, {
+        "type" : "product",
+        "confidence" : "HIGH",
+        "source" : "pom",
+        "name" : "url",
+        "value" : "virtuald/curvesapi"
+      } ],
+      "versionEvidence" : [ {
+        "type" : "version",
+        "confidence" : "HIGH",
+        "source" : "file",
+        "name" : "version",
+        "value" : "1.07"
+      }, {
+        "type" : "version",
+        "confidence" : "HIGHEST",
+        "source" : "pom",
+        "name" : "version",
+        "value" : "1.07"
+      } ]
+    },
+    "packages" : [ {
+      "id" : "pkg:maven/com.github.virtuald/curvesapi@1.07",
+      "confidence" : "HIGH"
+    } ]
+  }, {
+    "isVirtual" : false,
+    "fileName" : "poi-5.2.3.jar",
+    "filePath" : "libs/poi-5.2.3.jar",
+    "md5" : "d4b21c2109d83abb8e93ba4bcfbdeb3a",
+    "sha1" : "2fb22ae74ad5aea6af1a9c64b9542f2ccf348604",
+    "sha256" : "1d4c81a283e127693db89e85df45119d9d312d5686d2439b5be9445c2c649155",
+    "description" : "Apache POI - Java API To Access Microsoft Format Files",
+    "license" : "Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0.txt",
+    "relatedDependencies" : [ {
+      "isVirtual" : false,
+      "fileName" : "poi-ooxml-5.2.3.jar",
+      "filePath" : "libs/poi-ooxml-5.2.3.jar",
+      "sha256" : "9b8ff6ecf562836299ce15997796e3d47fe063a5956c1c7d3f6e2a4bf6e60b79",
+      "sha1" : "02efd11c940adb18c03eb9ce7ad88fc40ee6a196",
+      "md5" : "4874ead60c5e3aa7fcf29d3ad351eefa",
+      "packageIds" : [ {
+        "id" : "pkg:maven/org.apache.poi/poi-ooxml@5.2.3"
+      } ]
+    }, {
+      "isVirtual" : false,
+      "fileName" : "poi-ooxml-lite-5.2.3.jar",
+      "filePath" : "libs/poi-ooxml-lite-5.2.3.jar",
+      "sha256" : "35a200a9bd110b176450179170887bb9eac2dcba47a09d93c91e83afe70b7147",
+      "sha1" : "db113c8e9051b0ff967f4911fa20336c8325a7c5",
+      "md5" : "95016533b766ce1e4e5d8da783efff57",
+      "packageIds" : [ {
+        "id" : "pkg:maven/org.apache.poi/poi-ooxml-lite@5.2.3"
+      } ]
+    } ],
+    "evidenceCollected" : {
+      "vendorEvidence" : [ {
+        "type" : "vendor",
+        "confidence" : "HIGHEST",
+        "source" : "central",
+        "name" : "artifactid",
+        "value" : "poi"
+      }, {
+        "type" : "vendor",
+        "confidence" : "HIGHEST",
+        "source" : "central",
+        "name" : "groupid",
+        "value" : "org.apache.poi"
+      }, {
+        "type" : "vendor",
+        "confidence" : "HIGH",
+        "source" : "file",
+        "name" : "name",
+        "value" : "poi"
+      }, {
+        "type" : "vendor",
+        "confidence" : "HIGHEST",
+        "source" : "jar",
+        "name" : "package name",
+        "value" : "apache"
+      }, {
+        "type" : "vendor",
+        "confidence" : "LOW",
+        "source" : "jar",
+        "name" : "package name",
+        "value" : "apache"
+      }, {
+        "type" : "vendor",
+        "confidence" : "HIGHEST",
+        "source" : "jar",
+        "name" : "package name",
+        "value" : "poi"
+      }, {
+        "type" : "vendor",
+        "confidence" : "LOW",
+        "source" : "jar",
+        "name" : "package name",
+        "value" : "poi"
+      }, {
+        "type" : "vendor",
+        "confidence" : "MEDIUM",
+        "source" : "Manifest",
+        "name" : "automatic-module-name",
+        "value" : "org.apache.poi.poi"
+      }, {
+        "type" : "vendor",
+        "confidence" : "HIGH",
+        "source" : "Manifest",
+        "name" : "Implementation-Vendor",
+        "value" : "org.apache.poi"
+      }, {
+        "type" : "vendor",
+        "confidence" : "MEDIUM",
+        "source" : "Manifest",
+        "name" : "Implementation-Vendor-Id",
+        "value" : "The Apache Software Foundation"
+      }, {
+        "type" : "vendor",
+        "confidence" : "LOW",
+        "source" : "Manifest",
+        "name" : "multi-release",
+        "value" : "true"
+      }, {
+        "type" : "vendor",
+        "confidence" : "LOW",
+        "source" : "Manifest",
+        "name" : "specification-vendor",
+        "value" : "The Apache Software Foundation"
+      }, {
+        "type" : "vendor",
+        "confidence" : "LOW",
+        "source" : "pom",
+        "name" : "artifactid",
+        "value" : "poi"
+      }, {
+        "type" : "vendor",
+        "confidence" : "HIGHEST",
+        "source" : "pom",
+        "name" : "groupid",
+        "value" : "org.apache.poi"
+      }, {
+        "type" : "vendor",
+        "confidence" : "HIGH",
+        "source" : "pom",
+        "name" : "name",
+        "value" : "Apache POI - Common"
+      }, {
+        "type" : "vendor",
+        "confidence" : "HIGH",
+        "source" : "pom",
+        "name" : "organization name",
+        "value" : "Apache Software Foundation"
+      }, {
+        "type" : "vendor",
+        "confidence" : "MEDIUM",
+        "source" : "pom",
+        "name" : "organization url",
+        "value" : "http://www.apache.org/"
+      }, {
+        "type" : "vendor",
+        "confidence" : "HIGHEST",
+        "source" : "pom",
+        "name" : "url",
+        "value" : "https://poi.apache.org/"
+      } ],
+      "productEvidence" : [ {
+        "type" : "product",
+        "confidence" : "HIGHEST",
+        "source" : "central",
+        "name" : "artifactid",
+        "value" : "poi"
+      }, {
+        "type" : "product",
+        "confidence" : "HIGH",
+        "source" : "file",
+        "name" : "name",
+        "value" : "poi"
+      }, {
+        "type" : "product",
+        "confidence" : "HIGHEST",
+        "source" : "jar",
+        "name" : "package name",
+        "value" : "apache"
+      }, {
+        "type" : "product",
+        "confidence" : "HIGHEST",
+        "source" : "jar",
+        "name" : "package name",
+        "value" : "poi"
+      }, {
+        "type" : "product",
+        "confidence" : "LOW",
+        "source" : "jar",
+        "name" : "package name",
+        "value" : "poi"
+      }, {
+        "type" : "product",
+        "confidence" : "MEDIUM",
+        "source" : "Manifest",
+        "name" : "automatic-module-name",
+        "value" : "org.apache.poi.poi"
+      }, {
+        "type" : "product",
+        "confidence" : "HIGH",
+        "source" : "Manifest",
+        "name" : "Implementation-Title",
+        "value" : "Apache POI"
+      }, {
+        "type" : "product",
+        "confidence" : "LOW",
+        "source" : "Manifest",
+        "name" : "multi-release",
+        "value" : "true"
+      }, {
+        "type" : "product",
+        "confidence" : "MEDIUM",
+        "source" : "Manifest",
+        "name" : "specification-title",
+        "value" : "Apache POI"
+      }, {
+        "type" : "product",
+        "confidence" : "HIGHEST",
+        "source" : "pom",
+        "name" : "artifactid",
+        "value" : "poi"
+      }, {
+        "type" : "product",
+        "confidence" : "HIGHEST",
+        "source" : "pom",
+        "name" : "groupid",
+        "value" : "org.apache.poi"
+      }, {
+        "type" : "product",
+        "confidence" : "HIGH",
+        "source" : "pom",
+        "name" : "name",
+        "value" : "Apache POI - Common"
+      }, {
+        "type" : "product",
+        "confidence" : "LOW",
+        "source" : "pom",
+        "name" : "organization name",
+        "value" : "Apache Software Foundation"
+      }, {
+        "type" : "product",
+        "confidence" : "LOW",
+        "source" : "pom",
+        "name" : "organization url",
+        "value" : "http://www.apache.org/"
+      }, {
+        "type" : "product",
+        "confidence" : "MEDIUM",
+        "source" : "pom",
+        "name" : "url",
+        "value" : "https://poi.apache.org/"
+      } ],
+      "versionEvidence" : [ {
+        "type" : "version",
+        "confidence" : "HIGHEST",
+        "source" : "central",
+        "name" : "version",
+        "value" : "5.2.3"
+      }, {
+        "type" : "version",
+        "confidence" : "HIGH",
+        "source" : "file",
+        "name" : "version",
+        "value" : "5.2.3"
+      }, {
+        "type" : "version",
+        "confidence" : "HIGH",
+        "source" : "Manifest",
+        "name" : "Implementation-Version",
+        "value" : "5.2.3"
+      }, {
+        "type" : "version",
+        "confidence" : "HIGHEST",
+        "source" : "pom",
+        "name" : "version",
+        "value" : "5.2.3"
+      } ]
+    },
+    "packages" : [ {
+      "id" : "pkg:maven/org.apache.poi/poi@5.2.3",
+      "confidence" : "HIGH"
+    } ],
+    "vulnerabilityIds" : [ {
+      "id" : "cpe:2.3:a:apache:poi:5.2.3:*:*:*:*:*:*:*",
+      "confidence" : "HIGHEST",
+      "url" : "https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Aapache%3Apoi%3A5.2.3%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"
+    } ],
+    "vulnerabilities" : [ {
+      "source" : "NVD",
+      "name" : "CVE-2025-31672",
+      "severity" : "MEDIUM",
+      "cvssv3" : {
+        "baseScore" : 5.3,
+        "attackVector" : "NETWORK",
+        "attackComplexity" : "LOW",
+        "privilegesRequired" : "NONE",
+        "userInteraction" : "NONE",
+        "scope" : "UNCHANGED",
+        "confidentialityImpact" : "NONE",
+        "integrityImpact" : "LOW",
+        "availabilityImpact" : "NONE",
+        "baseSeverity" : "MEDIUM",
+        "exploitabilityScore" : "3.9",
+        "impactScore" : "1.4",
+        "version" : "3.1"
+      },
+      "cwes" : [ "CWE-20", "NVD-CWE-noinfo" ],
+      "description" : "Improper Input Validation vulnerability in Apache POI. The issue affects the parsing of OOXML format files like xlsx, docx and pptx. These file formats are basically zip files and it is possible for malicious users to add zip entries with duplicate names (including the path) in the zip. In this case, products reading the affected file could read different data because 1 of the zip entries with the duplicate name is selected over another but different products may choose a different zip entry.\nThis issue affects Apache POI poi-ooxml before 5.4.0. poi-ooxml 5.4.0 has a check that throws an exception if zip entries with duplicate file names are found in the input file.\nUsers are recommended to upgrade to version poi-ooxml 5.4.0, which fixes the issue. Please read  https://poi.apache.org/security.html  for recommendations about how to use the POI libraries securely.",
+      "notes" : "",
+      "references" : [ {
+        "source" : "af854a3a-2127-422b-91ae-364da2661108",
+        "url" : "http://www.openwall.com/lists/oss-security/2025/04/08/2",
+        "name" : "MAILING_LIST,THIRD_PARTY_ADVISORY"
+      }, {
+        "source" : "security@apache.org",
+        "url" : "https://lists.apache.org/thread/k14w8vcjqy4h34hh5kzldko78kpylkq5",
+        "name" : "MAILING_LIST,VENDOR_ADVISORY"
+      }, {
+        "source" : "security@apache.org",
+        "url" : "https://bz.apache.org/bugzilla/show_bug.cgi?id=69620",
+        "name" : "PERMISSIONS_REQUIRED"
+      }, {
+        "source" : "af854a3a-2127-422b-91ae-364da2661108",
+        "url" : "https://security.netapp.com/advisory/ntap-20250523-0004/",
+        "name" : "THIRD_PARTY_ADVISORY"
+      } ],
+      "vulnerableSoftware" : [ {
+        "software" : {
+          "id" : "cpe:2.3:a:apache:poi:*:*:*:*:*:*:*:*",
+          "vulnerabilityIdMatched" : "true",
+          "versionEndExcluding" : "5.4.0"
+        }
+      }, {
+        "software" : {
+          "id" : "cpe:2.3:a:netapp:active_iq_unified_manager:-:*:*:*:*:linux:*:*"
+        }
+      }, {
+        "software" : {
+          "id" : "cpe:2.3:a:netapp:active_iq_unified_manager:-:*:*:*:*:vmware_vsphere:*:*"
+        }
+      }, {
+        "software" : {
+          "id" : "cpe:2.3:a:netapp:active_iq_unified_manager:-:*:*:*:*:windows:*:*"
+        }
+      } ]
+    } ]
+  }, {
+    "isVirtual" : false,
+    "fileName" : "xmlbeans-5.1.1.jar",
+    "filePath" : "libs/xmlbeans-5.1.1.jar",
+    "md5" : "6f137af5334fbd77a2d64f5de8bf6ff6",
+    "sha1" : "48a369df0eccb509d46203104e4df9cb00f0f68b",
+    "sha256" : "5f484a78bed71cbffe3709678b6bdd3463781a7c61c6d9872330aecbf150762a",
+    "description" : "XmlBeans main jar",
+    "license" : "The Apache Software License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0.txt",
+    "evidenceCollected" : {
+      "vendorEvidence" : [ {
+        "type" : "vendor",
+        "confidence" : "HIGH",
+        "source" : "file",
+        "name" : "name",
+        "value" : "xmlbeans"
+      }, {
+        "type" : "vendor",
+        "confidence" : "HIGHEST",
+        "source" : "jar",
+        "name" : "package name",
+        "value" : "apache"
+      }, {
+        "type" : "vendor",
+        "confidence" : "HIGHEST",
+        "source" : "jar",
+        "name" : "package name",
+        "value" : "org"
+      }, {
+        "type" : "vendor",
+        "confidence" : "HIGHEST",
+        "source" : "jar",
+        "name" : "package name",
+        "value" : "xmlbeans"
+      }, {
+        "type" : "vendor",
+        "confidence" : "LOW",
+        "source" : "Manifest",
+        "name" : "multi-release",
+        "value" : "true"
+      }, {
+        "type" : "vendor",
+        "confidence" : "MEDIUM",
+        "source" : "manifest: org/apache/xmlbeans/",
+        "name" : "Implementation-Vendor",
+        "value" : "org.apache.xmlbeans"
+      }, {
+        "type" : "vendor",
+        "confidence" : "LOW",
+        "source" : "pom",
+        "name" : "artifactid",
+        "value" : "xmlbeans"
+      }, {
+        "type" : "vendor",
+        "confidence" : "LOW",
+        "source" : "pom",
+        "name" : "developer email",
+        "value" : "user@poi.apache.org"
+      }, {
+        "type" : "vendor",
+        "confidence" : "MEDIUM",
+        "source" : "pom",
+        "name" : "developer id",
+        "value" : "poi"
+      }, {
+        "type" : "vendor",
+        "confidence" : "MEDIUM",
+        "source" : "pom",
+        "name" : "developer name",
+        "value" : "POI Team"
+      }, {
+        "type" : "vendor",
+        "confidence" : "MEDIUM",
+        "source" : "pom",
+        "name" : "developer org",
+        "value" : "Apache POI"
+      }, {
+        "type" : "vendor",
+        "confidence" : "HIGHEST",
+        "source" : "pom",
+        "name" : "groupid",
+        "value" : "org.apache.xmlbeans"
+      }, {
+        "type" : "vendor",
+        "confidence" : "HIGH",
+        "source" : "pom",
+        "name" : "name",
+        "value" : "XmlBeans"
+      }, {
+        "type" : "vendor",
+        "confidence" : "HIGH",
+        "source" : "pom",
+        "name" : "organization name",
+        "value" : "XmlBeans"
+      }, {
+        "type" : "vendor",
+        "confidence" : "MEDIUM",
+        "source" : "pom",
+        "name" : "organization url",
+        "value" : "https://xmlbeans.apache.org/"
+      }, {
+        "type" : "vendor",
+        "confidence" : "HIGHEST",
+        "source" : "pom",
+        "name" : "url",
+        "value" : "https://xmlbeans.apache.org/"
+      } ],
+      "productEvidence" : [ {
+        "type" : "product",
+        "confidence" : "HIGH",
+        "source" : "file",
+        "name" : "name",
+        "value" : "xmlbeans"
+      }, {
+        "type" : "product",
+        "confidence" : "HIGHEST",
+        "source" : "jar",
+        "name" : "package name",
+        "value" : "apache"
+      }, {
+        "type" : "product",
+        "confidence" : "HIGHEST",
+        "source" : "jar",
+        "name" : "package name",
+        "value" : "org"
+      }, {
+        "type" : "product",
+        "confidence" : "HIGHEST",
+        "source" : "jar",
+        "name" : "package name",
+        "value" : "xmlbeans"
+      }, {
+        "type" : "product",
+        "confidence" : "LOW",
+        "source" : "Manifest",
+        "name" : "multi-release",
+        "value" : "true"
+      }, {
+        "type" : "product",
+        "confidence" : "MEDIUM",
+        "source" : "manifest: org/apache/xmlbeans/",
+        "name" : "Implementation-Title",
+        "value" : "Apache XmlBeans"
+      }, {
+        "type" : "product",
+        "confidence" : "MEDIUM",
+        "source" : "manifest: org/apache/xmlbeans/",
+        "name" : "Specification-Title",
+        "value" : "Apache XmlBeans"
+      }, {
+        "type" : "product",
+        "confidence" : "HIGHEST",
+        "source" : "pom",
+        "name" : "artifactid",
+        "value" : "xmlbeans"
+      }, {
+        "type" : "product",
+        "confidence" : "LOW",
+        "source" : "pom",
+        "name" : "developer email",
+        "value" : "user@poi.apache.org"
+      }, {
+        "type" : "product",
+        "confidence" : "LOW",
+        "source" : "pom",
+        "name" : "developer id",
+        "value" : "poi"
+      }, {
+        "type" : "product",
+        "confidence" : "LOW",
+        "source" : "pom",
+        "name" : "developer name",
+        "value" : "POI Team"
+      }, {
+        "type" : "product",
+        "confidence" : "LOW",
+        "source" : "pom",
+        "name" : "developer org",
+        "value" : "Apache POI"
+      }, {
+        "type" : "product",
+        "confidence" : "HIGHEST",
+        "source" : "pom",
+        "name" : "groupid",
+        "value" : "org.apache.xmlbeans"
+      }, {
+        "type" : "product",
+        "confidence" : "HIGH",
+        "source" : "pom",
+        "name" : "name",
+        "value" : "XmlBeans"
+      }, {
+        "type" : "product",
+        "confidence" : "LOW",
+        "source" : "pom",
+        "name" : "organization name",
+        "value" : "XmlBeans"
+      }, {
+        "type" : "product",
+        "confidence" : "LOW",
+        "source" : "pom",
+        "name" : "organization url",
+        "value" : "https://xmlbeans.apache.org/"
+      }, {
+        "type" : "product",
+        "confidence" : "MEDIUM",
+        "source" : "pom",
+        "name" : "url",
+        "value" : "https://xmlbeans.apache.org/"
+      } ],
+      "versionEvidence" : [ {
+        "type" : "version",
+        "confidence" : "HIGH",
+        "source" : "file",
+        "name" : "version",
+        "value" : "5.1.1"
+      }, {
+        "type" : "version",
+        "confidence" : "MEDIUM",
+        "source" : "manifest: org/apache/xmlbeans/",
+        "name" : "Implementation-Version",
+        "value" : "5.1.1"
+      }, {
+        "type" : "version",
+        "confidence" : "HIGHEST",
+        "source" : "pom",
+        "name" : "version",
+        "value" : "5.1.1"
+      } ]
+    },
+    "packages" : [ {
+      "id" : "pkg:maven/org.apache.xmlbeans/xmlbeans@5.1.1",
+      "confidence" : "HIGH"
+    } ],
+    "vulnerabilityIds" : [ {
+      "id" : "cpe:2.3:a:apache:xmlbeans:5.1.1:*:*:*:*:*:*:*",
+      "confidence" : "HIGHEST",
+      "url" : "https://nvd.nist.gov/vuln/search#/nvd/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Aapache%3Axmlbeans%3A5.1.1%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"
+    } ]
+  } ]
+}

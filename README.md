@@ -28,7 +28,7 @@ On Linux, install equivalent tools from your approved package sources and meet [
 
 The original scans used Dependency-Check 13.0.0, SonarScanner 8.1.0.6389, Maven 3.9.16, and Java 21. Package managers may install newer versions; retain tool versions with your evidence. The server installer pins SonarQube 26.9.0.129388 and verifies its SHA-256.
 
-## 1. Download the inputs
+## 1. Verify the inputs
 
 Run all commands from the repository root after cloning:
 
@@ -36,7 +36,7 @@ Run all commands from the repository root after cloning:
 python3 scripts/download-libs.py
 ```
 
-Downloads come from Maven Central. The script verifies the committed SHA-256 lock file and Central's SHA-1, checks ZIP integrity, and generates local provenance. No binary JARs are committed.
+The five binary JARs are committed under `libs/`. This command verifies them against the committed SHA-256 lock file and Maven Central's SHA-1, checks ZIP integrity, and recreates local provenance. If a JAR is missing, it is downloaded from Maven Central.
 
 ## 2. Dependency-Check: known vulnerabilities
 
@@ -44,7 +44,7 @@ Downloads come from Maven Central. The script verifies the committed SHA-256 loc
 ./scripts/scan-dependencies.sh
 ```
 
-Open the HTML report in the newly printed `reports/dependency-check-*` directory. The same directory contains JSON, logs, the input manifest, tool version, and exit status. The first NVD database update can take several minutes; later scans reuse its cache.
+Open [`reports/dependency-check/`](reports/dependency-check/) for the stable published report. Raw logs and run evidence are stored under the ignored `reports/raw/dependency-check/` directory. The first NVD database update can take several minutes; later scans reuse its cache.
 
 The default uses official NVD 2.0 feeds and CISA KEV. No NVD key is required in this mode. OSS Index is disabled because it requires separate credentials. The first scan downloads the vulnerability database into the ignored `data/` directory; later scans reuse and update that local cache. For custom settings:
 
@@ -76,9 +76,9 @@ python3 scripts/summarize-source-scans.py
 
 A fresh server starts with `admin` / `admin`. The configuration script prompts privately for the current password and requires replacing the default; each teammate chooses their own password. It creates five private projects and analysis tokens. Credentials stay in ignored `private/`. Existing server state and saved credentials are retained on reruns.
 
-The preparation script downloads matching source archives, selects sources represented in the release bytecode, resolves the analysis classpath using Maven, and adds full-schema reference types. No upstream build or tests are run. The setup also downloads a pinned Temurin JDK 8 archive solely for reference classes; its macOS/x64 binaries are never executed, including on Linux or Apple Silicon. You may instead set `JAVA8_REFERENCE_HOME` to an existing JDK 8 directory for the scanner.
+The exact Java files analyzed in the published report are committed under [`sources/`](sources/). The preparation script verifies matching source archives, recreates the source selection and release bytecode, resolves the analysis classpath using Maven, and adds full-schema reference types. No upstream build or tests are run. The setup also downloads a pinned Temurin JDK 8 archive solely for reference classes; its macOS/x64 binaries are never executed, including on Linux or Apple Silicon. You may instead set `JAVA8_REFERENCE_HOME` to an existing JDK 8 directory for the scanner.
 
-Open [SonarQube projects](http://127.0.0.1:9000/projects). Detailed JSON and logs are stored in `reports/sonarqube-*`; the last command creates `reports/SONARQUBE-SUMMARY.md`. See [SOURCE-SCANS.md](SOURCE-SCANS.md) for scope and limitations.
+Open [SonarQube projects](http://127.0.0.1:9000/projects). Raw JSON and logs are stored under ignored `reports/raw/sonarqube/` runs. The last command publishes the latest complete evidence to [`reports/sonarqube/`](reports/sonarqube/). See [SOURCE-SCANS.md](SOURCE-SCANS.md) for scope and limitations.
 
 For later scans, with the server running:
 
@@ -95,7 +95,7 @@ Server controls:
 ./scripts/sonarqube.sh stop
 ```
 
-The local server binds to 127.0.0.1:9000 and uses embedded H2. Each teammate runs their own dashboard. Reports and the database are not uploaded by Git.
+The local server binds to 127.0.0.1:9000 and uses embedded H2. Each teammate runs their own dashboard. The curated report snapshot is committed; raw runs and the local server database are not.
 
 ## Repository contents
 
@@ -103,12 +103,15 @@ The local server binds to 127.0.0.1:9000 and uses embedded H2. Each teammate run
 | --- | --- |
 | scripts/ | Download, setup, scan, and summarize |
 | config/ | Credential-free settings and examples |
-| metadata/SHA256SUMS | Pinned hashes for the five binary inputs |
+| libs/ | The five exact binary JAR scan inputs |
+| sources/ | The 4,937 exact Java files analyzed by SonarQube, with upstream licenses |
+| reports/ | Stable Dependency-Check and SonarQube report packages |
+| metadata/ | Binary provenance, pinned hashes, and release POMs |
 | README.md, SOURCE-SCANS.md | Setup and analysis method |
 
-Generated `libs/`, `sources/`, `tools/`, `data/`, `reports/`, `private/`, and other metadata are ignored. Keep existing local reports as evidence. Do not force-add ignored directories: `private/` contains secrets, `tools/` contains the server database, and `data/` contains a large mutable vulnerability cache.
+Generated bytecode, source archives, analysis dependencies, raw reports, `tools/`, `data/`, `private/`, and generated metadata are ignored. Do not force-add ignored files: `private/` contains secrets, `tools/` contains the server database, and `data/` contains a large mutable vulnerability cache.
 
-Before committing, inspect `git status --short` and `git diff --cached`. Share scripts through Git; share selected reviewed reports separately if needed.
+Before committing, inspect `git status --short` and `git diff --cached`. Publish only the stable report folders after reviewing a scan.
 
 ## Interpreting results
 

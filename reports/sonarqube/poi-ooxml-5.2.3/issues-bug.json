@@ -1,0 +1,1055 @@
+{
+  "total": 16,
+  "exported": 16,
+  "issues": [
+    {
+      "key": "c3fe4afe-96f0-407b-8eef-a5aff3984493",
+      "rule": "java:S5998",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/openxml4j/opc/internal/ContentType.java",
+      "project": "lib-prescan-poi-ooxml-5.2.3",
+      "line": 133,
+      "hash": "31c03f3946ed918f975a89b5fe1948e7",
+      "textRange": {
+        "startLine": 133,
+        "endLine": 133,
+        "startOffset": 62,
+        "endOffset": 64
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/openxml4j/opc/internal/ContentType.java",
+              "textRange": {
+                "startLine": 103,
+                "endLine": 103,
+                "startOffset": 28,
+                "endOffset": 29
+              },
+              "msg": "Continuing here",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/openxml4j/opc/internal/ContentType.java",
+              "textRange": {
+                "startLine": 94,
+                "endLine": 94,
+                "startOffset": 24,
+                "endOffset": 77
+              },
+              "msg": "Continuing here",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/openxml4j/opc/internal/ContentType.java",
+              "textRange": {
+                "startLine": 103,
+                "endLine": 103,
+                "startOffset": 42,
+                "endOffset": 49
+              },
+              "msg": "Continuing here",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/openxml4j/opc/internal/ContentType.java",
+              "textRange": {
+                "startLine": 94,
+                "endLine": 94,
+                "startOffset": 24,
+                "endOffset": 77
+              },
+              "msg": "Continuing here",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/openxml4j/opc/internal/ContentType.java",
+              "textRange": {
+                "startLine": 103,
+                "endLine": 103,
+                "startOffset": 62,
+                "endOffset": 67
+              },
+              "msg": "Continuing here",
+              "msgFormattings": []
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/openxml4j/opc/internal/ContentType.java",
+              "textRange": {
+                "startLine": 133,
+                "endLine": 133,
+                "startOffset": 81,
+                "endOffset": 83
+              },
+              "msg": "Continuing here",
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Refactor this repetition that can lead to a stack overflow for large inputs.",
+      "effort": "20min",
+      "debt": "20min",
+      "author": "",
+      "tags": [
+        "regex"
+      ],
+      "creationDate": "2026-09-28T12:03:31+0700",
+      "updateDate": "2026-09-28T12:03:31+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "875c5e38-e3cb-446b-a9b1-c65ad93155b3",
+      "rule": "java:S5164",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/poifs/crypt/dsig/SignatureConfig.java",
+      "project": "lib-prescan-poi-ooxml-5.2.3",
+      "line": 129,
+      "hash": "5ae96cd3310475decd2ea7780a31daef",
+      "textRange": {
+        "startLine": 129,
+        "endLine": 129,
+        "startOffset": 42,
+        "endOffset": 52
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Call \"remove()\" on \"opcPackage\".",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "leak",
+        "performance"
+      ],
+      "creationDate": "2026-09-28T12:03:31+0700",
+      "updateDate": "2026-09-28T12:03:31+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "f19e3164-3955-4e58-abb6-855d26499323",
+      "rule": "java:S5164",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/poifs/crypt/dsig/SignatureConfig.java",
+      "project": "lib-prescan-poi-ooxml-5.2.3",
+      "line": 130,
+      "hash": "ff0dba5d2bf36511ceea7ab1ecbc2d77",
+      "textRange": {
+        "startLine": 130,
+        "endLine": 130,
+        "startOffset": 51,
+        "endOffset": 67
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Call \"remove()\" on \"signatureFactory\".",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "leak",
+        "performance"
+      ],
+      "creationDate": "2026-09-28T12:03:31+0700",
+      "updateDate": "2026-09-28T12:03:31+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "0621ac78-0aa5-40d0-814b-f85bd0c8c1fa",
+      "rule": "java:S5164",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/poifs/crypt/dsig/SignatureConfig.java",
+      "project": "lib-prescan-poi-ooxml-5.2.3",
+      "line": 131,
+      "hash": "5b42172543583ef996575565f6cd99b6",
+      "textRange": {
+        "startLine": 131,
+        "endLine": 131,
+        "startOffset": 46,
+        "endOffset": 60
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Call \"remove()\" on \"keyInfoFactory\".",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "leak",
+        "performance"
+      ],
+      "creationDate": "2026-09-28T12:03:31+0700",
+      "updateDate": "2026-09-28T12:03:31+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "450bec1f-2535-4406-ba85-30acf1820cbd",
+      "rule": "java:S5164",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/poifs/crypt/dsig/SignatureConfig.java",
+      "project": "lib-prescan-poi-ooxml-5.2.3",
+      "line": 132,
+      "hash": "af92f1f9d92731e08810dabc50fbe261",
+      "textRange": {
+        "startLine": 132,
+        "endLine": 132,
+        "startOffset": 40,
+        "endOffset": 48
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Call \"remove()\" on \"provider\".",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "leak",
+        "performance"
+      ],
+      "creationDate": "2026-09-28T12:03:31+0700",
+      "updateDate": "2026-09-28T12:03:31+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "aced94ca-f199-4966-b394-a45e0782b15e",
+      "rule": "java:S9363",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/poifs/crypt/dsig/facets/XAdESSignatureFacet.java",
+      "project": "lib-prescan-poi-ooxml-5.2.3",
+      "line": 162,
+      "hash": "dac2bbffa52dfa47913a2f574696650e",
+      "textRange": {
+        "startLine": 162,
+        "endLine": 162,
+        "startOffset": 82,
+        "endOffset": 85
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Change this invalid time zone ID; an unrecognized identifier makes TimeZone.getTimeZone(String) return GMT with no error.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "datetime",
+        "timezone",
+        "pitfall"
+      ],
+      "creationDate": "2026-09-28T12:03:31+0700",
+      "updateDate": "2026-09-28T12:03:31+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "26f3533b-2320-47bb-a4bb-374da1ba293f",
+      "rule": "java:S9363",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/poifs/crypt/dsig/facets/XAdESXLSignatureFacet.java",
+      "project": "lib-prescan-poi-ooxml-5.2.3",
+      "line": 234,
+      "hash": "801fa165c65e63797eba349182f1779e",
+      "textRange": {
+        "startLine": 234,
+        "endLine": 234,
+        "startOffset": 73,
+        "endOffset": 76
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Change this invalid time zone ID; an unrecognized identifier makes TimeZone.getTimeZone(String) return GMT with no error.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "datetime",
+        "timezone",
+        "pitfall"
+      ],
+      "creationDate": "2026-09-28T12:03:31+0700",
+      "updateDate": "2026-09-28T12:03:31+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "edc52848-981f-4ba7-bb9d-4ac255769e14",
+      "rule": "java:S9363",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/poifs/crypt/dsig/facets/XAdESXLSignatureFacet.java",
+      "project": "lib-prescan-poi-ooxml-5.2.3",
+      "line": 261,
+      "hash": "801fa165c65e63797eba349182f1779e",
+      "textRange": {
+        "startLine": 261,
+        "endLine": 261,
+        "startOffset": 77,
+        "endOffset": 80
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Change this invalid time zone ID; an unrecognized identifier makes TimeZone.getTimeZone(String) return GMT with no error.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "datetime",
+        "timezone",
+        "pitfall"
+      ],
+      "creationDate": "2026-09-28T12:03:31+0700",
+      "updateDate": "2026-09-28T12:03:31+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "ef0190b2-ca8f-4dd2-af38-d4a04244a5ce",
+      "rule": "java:S2583",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xslf/util/PPTHandler.java",
+      "project": "lib-prescan-poi-ooxml-5.2.3",
+      "line": 71,
+      "hash": "33ba85cfa9bb8e05532cf0a129b092c3",
+      "textRange": {
+        "startLine": 71,
+        "endLine": 71,
+        "startOffset": 12,
+        "endOffset": 23
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xslf/util/PPTHandler.java",
+              "textRange": {
+                "startLine": 71,
+                "endLine": 71,
+                "startOffset": 12,
+                "endOffset": 23
+              },
+              "msg": "Expression is always false.",
+              "msgFormattings": []
+            },
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xslf/util/PPTHandler.java",
+              "textRange": {
+                "startLine": 63,
+                "endLine": 63,
+                "startOffset": 12,
+                "endOffset": 59
+              },
+              "msg": "Implies 'ppt' can be not null.",
+              "msgFormattings": []
+            },
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xslf/util/PPTHandler.java",
+              "textRange": {
+                "startLine": 63,
+                "endLine": 63,
+                "startOffset": 18,
+                "endOffset": 59
+              },
+              "msg": "'create()' can return not null.",
+              "msgFormattings": []
+            },
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xslf/util/PPTHandler.java",
+              "textRange": {
+                "startLine": 63,
+                "endLine": 63,
+                "startOffset": 48,
+                "endOffset": 52
+              },
+              "msg": "Implies 'null' is not null.",
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Change this condition so that it does not always evaluate to \"false\"",
+      "effort": "15min",
+      "debt": "15min",
+      "author": "",
+      "tags": [
+        "cwe",
+        "symbolic-execution",
+        "cert",
+        "unused",
+        "suspicious",
+        "pitfall"
+      ],
+      "creationDate": "2026-09-28T12:03:31+0700",
+      "updateDate": "2026-09-28T12:03:31+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "49347366-e984-4391-ba41-ff487c80f77c",
+      "rule": "java:S2583",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xslf/util/PPTHandler.java",
+      "project": "lib-prescan-poi-ooxml-5.2.3",
+      "line": 88,
+      "hash": "33ba85cfa9bb8e05532cf0a129b092c3",
+      "textRange": {
+        "startLine": 88,
+        "endLine": 88,
+        "startOffset": 12,
+        "endOffset": 23
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xslf/util/PPTHandler.java",
+              "textRange": {
+                "startLine": 88,
+                "endLine": 88,
+                "startOffset": 12,
+                "endOffset": 23
+              },
+              "msg": "Expression is always false.",
+              "msgFormattings": []
+            },
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xslf/util/PPTHandler.java",
+              "textRange": {
+                "startLine": 80,
+                "endLine": 80,
+                "startOffset": 12,
+                "endOffset": 51
+              },
+              "msg": "Implies 'ppt' can be not null.",
+              "msgFormattings": []
+            },
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xslf/util/PPTHandler.java",
+              "textRange": {
+                "startLine": 80,
+                "endLine": 80,
+                "startOffset": 18,
+                "endOffset": 51
+              },
+              "msg": "'create()' can return not null.",
+              "msgFormattings": []
+            },
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xslf/util/PPTHandler.java",
+              "textRange": {
+                "startLine": 80,
+                "endLine": 80,
+                "startOffset": 46,
+                "endOffset": 50
+              },
+              "msg": "Implies 'null' is not null.",
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Change this condition so that it does not always evaluate to \"false\"",
+      "effort": "15min",
+      "debt": "15min",
+      "author": "",
+      "tags": [
+        "cwe",
+        "symbolic-execution",
+        "cert",
+        "unused",
+        "suspicious",
+        "pitfall"
+      ],
+      "creationDate": "2026-09-28T12:03:31+0700",
+      "updateDate": "2026-09-28T12:03:31+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "35212c9d-e5b6-432f-b652-e57508dafae2",
+      "rule": "java:S9362",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xssf/streaming/SXSSFRow.java",
+      "project": "lib-prescan-poi-ooxml-5.2.3",
+      "line": 573,
+      "hash": "12be4057c05bbb9f3f736a983f8f0915",
+      "textRange": {
+        "startLine": 573,
+        "endLine": 573,
+        "startOffset": 15,
+        "endOffset": 23
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xssf/streaming/SXSSFRow.java",
+              "textRange": {
+                "startLine": 574,
+                "endLine": 574,
+                "startOffset": 15,
+                "endOffset": 21
+              },
+              "msg": "Not compared in equals()",
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "This hashCode() implementation is inconsistent with equals(): it reads \"_cells\", which equals() never reads, so equal objects may hash differently.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "suspicious"
+      ],
+      "creationDate": "2026-09-28T12:03:31+0700",
+      "updateDate": "2026-09-28T12:03:31+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "3428d5f6-5db4-4e5b-bb22-9cdae22b031d",
+      "rule": "java:S2259",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xssf/usermodel/XSSFSheet.java",
+      "project": "lib-prescan-poi-ooxml-5.2.3",
+      "line": 2263,
+      "hash": "e844da1351aa8c564440e3e12adf9158",
+      "textRange": {
+        "startLine": 2263,
+        "endLine": 2263,
+        "startOffset": 12,
+        "endOffset": 26
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xssf/usermodel/XSSFSheet.java",
+              "textRange": {
+                "startLine": 2300,
+                "endLine": 2300,
+                "startOffset": 12,
+                "endOffset": 29
+              },
+              "msg": "Implies 'collapsed' can be null.",
+              "msgFormattings": []
+            },
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xssf/usermodel/XSSFSheet.java",
+              "textRange": {
+                "startLine": 2263,
+                "endLine": 2263,
+                "startOffset": 27,
+                "endOffset": 36
+              },
+              "msg": "'collapsed' is passed to 'unsetCollapsed()'.",
+              "msgFormattings": []
+            },
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xssf/usermodel/XSSFSheet.java",
+              "textRange": {
+                "startLine": 2252,
+                "endLine": 2252,
+                "startOffset": 35,
+                "endOffset": 52
+              },
+              "msg": "Implies 'collapsed' can be null.",
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "\"NullPointerException\" will be thrown when invoking method \"unsetCollapsed()\".",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "cwe",
+        "symbolic-execution",
+        "cert"
+      ],
+      "creationDate": "2026-09-28T12:03:31+0700",
+      "updateDate": "2026-09-28T12:03:31+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "efd55f60-b22f-4c38-8e4b-d20e7d2a787a",
+      "rule": "java:S2259",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xssf/usermodel/XSSFSheet.java",
+      "project": "lib-prescan-poi-ooxml-5.2.3",
+      "line": 2277,
+      "hash": "f499efa6c6726cde1b469264a7083538",
+      "textRange": {
+        "startLine": 2277,
+        "endLine": 2277,
+        "startOffset": 12,
+        "endOffset": 26
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xssf/usermodel/XSSFSheet.java",
+              "textRange": {
+                "startLine": 2300,
+                "endLine": 2300,
+                "startOffset": 12,
+                "endOffset": 29
+              },
+              "msg": "Implies 'collapsed' can be null.",
+              "msgFormattings": []
+            },
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xssf/usermodel/XSSFSheet.java",
+              "textRange": {
+                "startLine": 2277,
+                "endLine": 2277,
+                "startOffset": 27,
+                "endOffset": 36
+              },
+              "msg": "'collapsed' is passed to 'unsetCollapsed()'.",
+              "msgFormattings": []
+            },
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xssf/usermodel/XSSFSheet.java",
+              "textRange": {
+                "startLine": 2252,
+                "endLine": 2252,
+                "startOffset": 35,
+                "endOffset": 52
+              },
+              "msg": "Implies 'collapsed' can be null.",
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "\"NullPointerException\" will be thrown when invoking method \"unsetCollapsed()\".",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "cwe",
+        "symbolic-execution",
+        "cert"
+      ],
+      "creationDate": "2026-09-28T12:03:31+0700",
+      "updateDate": "2026-09-28T12:03:31+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "e8b71010-c99f-4a10-90c5-67c661bfd996",
+      "rule": "java:S2259",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xssf/usermodel/XSSFSheet.java",
+      "project": "lib-prescan-poi-ooxml-5.2.3",
+      "line": 2290,
+      "hash": "0af446652a4584a00f5ded6c41594fd1",
+      "textRange": {
+        "startLine": 2290,
+        "endLine": 2290,
+        "startOffset": 12,
+        "endOffset": 26
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xssf/usermodel/XSSFSheet.java",
+              "textRange": {
+                "startLine": 2300,
+                "endLine": 2300,
+                "startOffset": 12,
+                "endOffset": 29
+              },
+              "msg": "Implies 'collapsed' can be null.",
+              "msgFormattings": []
+            },
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xssf/usermodel/XSSFSheet.java",
+              "textRange": {
+                "startLine": 2290,
+                "endLine": 2290,
+                "startOffset": 27,
+                "endOffset": 36
+              },
+              "msg": "'collapsed' is passed to 'unsetCollapsed()'.",
+              "msgFormattings": []
+            },
+            {
+              "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xssf/usermodel/XSSFSheet.java",
+              "textRange": {
+                "startLine": 2252,
+                "endLine": 2252,
+                "startOffset": 35,
+                "endOffset": 52
+              },
+              "msg": "Implies 'collapsed' can be null.",
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "\"NullPointerException\" will be thrown when invoking method \"unsetCollapsed()\".",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "cwe",
+        "symbolic-execution",
+        "cert"
+      ],
+      "creationDate": "2026-09-28T12:03:31+0700",
+      "updateDate": "2026-09-28T12:03:31+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "21537377-25d2-4048-921d-6868fc7c97ae",
+      "rule": "java:S9354",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xssf/usermodel/XSSFSheet.java",
+      "project": "lib-prescan-poi-ooxml-5.2.3",
+      "line": 3239,
+      "hash": "35106b85ccbbfc68ed6a9d465f02e4c9",
+      "textRange": {
+        "startLine": 3239,
+        "endLine": 3239,
+        "startOffset": 37,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Subtracting numeric values in compare can overflow; use Integer.compare instead.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "pitfall"
+      ],
+      "creationDate": "2026-09-28T12:03:31+0700",
+      "updateDate": "2026-09-28T12:03:31+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "af203aff-679e-4239-bde0-ba234bcfbf03",
+      "rule": "java:S9354",
+      "severity": "MAJOR",
+      "component": "lib-prescan-poi-ooxml-5.2.3:scan-src/org/apache/poi/xssf/usermodel/XSSFSheet.java",
+      "project": "lib-prescan-poi-ooxml-5.2.3",
+      "line": 3335,
+      "hash": "35106b85ccbbfc68ed6a9d465f02e4c9",
+      "textRange": {
+        "startLine": 3335,
+        "endLine": 3335,
+        "startOffset": 37,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Subtracting numeric values in compare can overflow; use Integer.compare instead.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "pitfall"
+      ],
+      "creationDate": "2026-09-28T12:03:31+0700",
+      "updateDate": "2026-09-28T12:03:31+0700",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    }
+  ]
+}

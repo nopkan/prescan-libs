@@ -1,0 +1,62 @@
+{
+  "component": {
+    "key": "lib-prescan-poi-ooxml-5.2.3",
+    "name": "org.apache.poi:poi-ooxml:5.2.3",
+    "qualifier": "TRK",
+    "measures": [
+      {
+        "metric": "coverage",
+        "value": "0.0",
+        "bestValue": false
+      },
+      {
+        "metric": "bugs",
+        "value": "16",
+        "bestValue": false
+      },
+      {
+        "metric": "reliability_rating",
+        "value": "3.0",
+        "bestValue": false
+      },
+      {
+        "metric": "code_smells",
+        "value": "1676",
+        "bestValue": false
+      },
+      {
+        "metric": "duplicated_lines_density",
+        "value": "5.2",
+        "bestValue": false
+      },
+      {
+        "metric": "security_rating",
+        "value": "4.0",
+        "bestValue": false
+      },
+      {
+        "metric": "ncloc",
+        "value": "78123"
+      },
+      {
+        "metric": "files",
+        "value": "642"
+      },
+      {
+        "metric": "vulnerabilities",
+        "value": "4",
+        "bestValue": false
+      },
+      {
+        "metric": "security_hotspots",
+        "value": "0",
+        "bestValue": true
+      },
+      {
+        "metric": "sqale_rating",
+        "value": "1.0",
+        "bestValue": true
+      }
+    ]
+  }
+}
