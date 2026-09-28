@@ -1,0 +1,11 @@
+# Copy to private/dependency-check.properties; keep actual credentials out of Git.
+# This workspace uses the official NVD 2.0 feeds after the unauthenticated API failed.
+# No API key is needed for these downloadable feeds.
+nvd.api.datafeed.url=https://nvd.nist.gov/feeds/json/cve/2.0/nvdcve-2.0-{0}.json.gz
+# To use the API instead, remove/comment the datafeed URL and supply a key below.
+# Request a key: https://nvd.nist.gov/developers/request-an-api-key
+# nvd.api.key=YOUR_NVD_API_KEY
+
+# This test configuration uses NVD and CISA KEV without Sonatype credentials.
+# OSS Index requires separate authentication; enable it when credentials exist.
+analyzer.ossindex.enabled=false
